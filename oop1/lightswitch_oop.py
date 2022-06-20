@@ -1,13 +1,11 @@
 #lightswitch_opp.py
-from typing_extensions import Self
-
 
 class LightSwitch():
     def __init__(self) -> None:
         self.switch_status = False
 
     def turnon(self):
-        Self.switch_status = True
+        self.switch_status = True
     def turnoff(self):
         self.switch_status = False
 
@@ -24,4 +22,5 @@ switch_obj.show() #True
 switch_obj.turnoff()
 switch_obj.show() #false
 switch_obj.turnoff()
-switch_obj.show() #flase
+
+
